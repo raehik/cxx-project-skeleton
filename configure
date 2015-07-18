@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#
+# Prepare a Makefile using CMake.
+#
+
+build_dir="build"
+toolchain_file="toolchain-mingw-w64-linux.cmake"
+
+rm -rf "$build_dir"
+mkdir "$build_dir"
+
+cd build
+
+# Linux
+cmake ../
+
+# Windows
+#cmake ../ "-DCMAKE_TOOLCHAIN_FILE=$toolchain_file"
