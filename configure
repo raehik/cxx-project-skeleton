@@ -9,7 +9,7 @@ toolchain_file="toolchain-mingw-w64-linux.cmake"
 rm -rf "$build_dir"
 mkdir "$build_dir"
 
-cd build
+cd "$build_dir"
 
 # Linux
 cmake ../
